@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const newUser = { name, email, telefono, ocupacion };
 
         try {
-            const response = await fetch("https://backend-personas.vercel.app/api/users", {
+            const response = await fetch("https://backend-1x4z.vercel.app/api/users", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function loadUsers() {
     try {
-        const response = await fetch("https://backend-personas.vercel.app/api/users");
+        const response = await fetch("https://backend-1x4z.vercel.app/api/users");
         if (!response.ok) throw new Error("Error al obtener usuarios");
 
         const users = await response.json();
